@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-navbar>
+        <connection></connection>
+        <ion-title>Todos</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card *ngFor="let todo of todos | async">
+        <ion-card-header>
+            {{todo.title}}
+        </ion-card-header>
+
+        <ion-card-content>
+            {{todo.description}}
+        </ion-card-content>
+
+    </ion-card>
+</ion-content>
